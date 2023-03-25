@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function get_members(){
+      return ['tank','agnes','yohan','1','22','333'];
+    }
+
+    members = get_members();
+
+    for(let i = 0; i < members.length; i++){
+      document.write(members[i].toUpperCase() + "<br>");
+    }
+
+  </script>
+
+ <script>
+  let li =['a','b','c','d','e']
+  li.push('f');
+
+  li
+ (5) ['a', 'b', 'c', 'd', 'e']
+ li.push('f');
+ 6
+ li
+ (6) ['a', 'b', 'c', 'd', 'e', 'f']
+ li.concat('g','h')
+ (8) ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+ li
+ (6) ['a', 'b', 'c', 'd', 'e', 'f']
+ li = li.concat('g','h');
+ (8) ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+ li
+ (8) ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+ li.unshift('z');
+ 9
+ li
+ (9) ['z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+ let a = ['a','b','c']
+ undefined
+ a
+ (3) ['a', 'b', 'c']
+ a.splice(1,0,'d');
+ []
+ a
+ (4) ['a', 'd', 'b', 'c']
+
+ 
+ //splice 사용하는법.
+ //index 1 앞에 그 인덱스1번으로부터 몇개를 삭제하고(1), 
+ // 그자리에 x,y를 넣는다. 는 뜻.
+ 
+ a.splice(1,1,'x','y');
+ ['d']
+ a
+ (5) ['a', 'x', 'y', 'b', 'c']
+  
+ </script>
+
+
+
+
+</body>
+</html>
